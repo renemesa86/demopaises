@@ -1,0 +1,55 @@
+<ion-header>  
+  <ion-toolbar color="primary">
+    <ion-title>Detalles del país</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> 
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">   
+  <ion-content>
+    
+      
+      <ion-item button >
+        <div class="container" style="padding: 50px 0 1px 0;">
+          <img src="{{ countryDetails.bandera}}" alt="" width="250">
+          <ion-label class="ion-text-wrap" style="padding: 0px;width: 100%;">
+             <h1 style="padding: 20px 0 10px 0;">{{ countryDetails.nombre }}</h1>   
+             <p>{{ countryDetails.capital }}</p>  <br>
+              <p>{{ countryDetails.descripcion }}</p> <br>
+                <div style="display: flex;">
+                  <p> Latitud: {{ countryDetails.latitud}} Longitud: {{ countryDetails.longitud}}</p>
+                </div>
+                <br> 
+          </ion-label>
+          
+        </div>
+      </ion-item>
+
+       <!-- <ion-card-content style="padding: 0px 15px 20px 15px;" >
+
+        <img src="{{ countryDetails.bandera }}" alt="" width="280">
+        <br>
+        <br>
+        {{ countryDetails.capital }} <br>      
+        <p>{{ countryDetails.descripcion }}</p> <br>  
+        Latitud: {{ countryDetails.latitud }} <br>
+        Longitud: {{ countryDetails.longitud }}
+        <br>
+ 
+        <div style="padding: 10px 0 10px 0px;">
+            <p><span style="font-size: auto;">Capital :</span> {{ countryDetails.capital }} </p>
+            <p style="padding: 5px 0 5px 0;">Descripción : {{ countryDetails.descripcion }}</p>  
+<br>
+            <span style="padding: 6px 5px;margin-top: 10px; background-color: lightblue;">Latitud: {{ countryDetails.latitud }}</span> &nbsp;
+            <span style="padding: 6px 5px;margin-top: 10px; background-color: lightblue;">Longitud: {{ countryDetails.longitud }}</span>
+        </div>
+ 
+
+      </ion-card-content>         -->
+     
+     
+  </ion-content> 
+</ion-content>
